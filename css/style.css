@@ -1,0 +1,227 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height:59px;
+}
+
+/* Navigation bar */
+#navbar{
+    display: flex;
+    align-items:center ;
+    position: absolute;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 21px;
+    left: -1px;
+    height: 59%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1.5;
+}
+
+/* nav bar logo and images */
+#logo{
+    margin: 10px 34px;
+}
+#logo img{
+    height: 65px;
+    margin: 12px -17px;
+}
+
+/* navigation bar : list styling */
+#navbar ul{
+    display:flex;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#navbar ul li{
+    list-style: none;
+    font-size:1.3rem;
+    text-decoration: none
+}
+#navbar ul li a{
+    color: rgb(231, 227, 222);
+    display:block;
+    padding:3px 11px;
+    border-radius:20px ;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: rgb(14, 8, 1);
+    background-color: blanchedalmond;   
+}
+
+/* Home Section */
+#home{
+    display:flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 403px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content:"";
+    background: url('/images/background.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 58%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#home p{
+    color: rgb(6, 10, 248);
+    text-align:center;
+    font-size: 1.3rem;
+    font-family: serif Arial, Helvetica, sans-serif;
+}
+
+/* Services section */
+#service-container{
+    height:548px;
+}
+#services{
+    display: flex;
+    margin: 34px;
+    justify-content: center;
+    align-items: center;
+}
+#services::before{
+    content:"";
+    position:absolute;
+    width: 100%;
+    height:67%;
+    z-index: -1;
+    opacity: 0.8;
+    background-color: violet;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px ;
+    margin: -31px 42px;
+    border-radius: 23px;
+    background-color: rgb(230, 221, 221);
+}
+#services .box img{
+    height: 150px;
+    margin: auto;
+    display: block;
+    
+}
+#services .box p{   
+    font-family:'cursive';
+}
+
+#services{  
+}
+
+
+
+/* Clients Section */
+#client-section{
+    height: 50px;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background-color: tomato;
+    width: 100%;
+    height: 33%;
+    z-index: -1;
+    opacity: 0.8;
+
+}
+
+
+
+#clients{
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+#clients img{
+    height: 120px;  
+}
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content:"";
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    background: url(/images/2012_chevrolet_camaro-1920x1200.jpg) no-repeat center center/cover;
+}
+
+#contact-box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 54px;
+    margin: -34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width:100%;
+    padding: 0.5rem;
+}
+
+#contact-box form{
+    width:40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family:'cursive';
+}
+
+/* Footer section */
+footer{
+    background: black;
+    color:white;
+    padding:9px 20px;
+}
+
+/* utility class */
+.h-primary{
+    font-size: 3rem;
+    padding:34px;
+    text-align:center;
+    font-family: cursive;
+}
+.h-secondary{
+    font-size: 1.6rem;
+    padding:0px 94px;
+    font-family: cursive;
+    text-align:center;
+}
+.center{
+    text-align:center;
+}
+
+    
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: tomato;
+    color: white;
+    margin: 17px;
+    font-size: 1rem;
+    border-radius: 11px;
+    cursor: pointer;
+}
